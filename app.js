@@ -11,11 +11,11 @@ function asignarTextoElemento(elemento, texto){
 function agregarAmigo(){
     let amigon = document.getElementById("amigo").value
     
-    if (!amigolist.includes(amigon)){
-        amigolist.push(amigon);
-    } else{
-        if (amigon == ""){
+    if (amigon == ""){
             alert("Por favor ingresa un nombre valido")
+    } else{
+        if (!amigolist.includes(amigon)){
+            amigolist.push(amigon);
         }
     }
 
